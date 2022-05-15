@@ -34,6 +34,8 @@
 @mixin btn-empty {
   @include btn-primary;
   border: 2px solid $primary-color;
+  color: $primary-color;
+  font-size: 1.6rem;
   background: transparent;
 }
 
