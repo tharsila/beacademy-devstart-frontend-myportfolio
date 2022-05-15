@@ -45,7 +45,7 @@ header {
 
       .menu{
         @include flex-center;
-        justify-content: space-around;
+        justify-content: space-between;
   
         li {
           margin-right: 4.8rem;
@@ -69,5 +69,67 @@ header {
     }
   
   }
+}
 
+/* section hero */
+
+main {
+  .hero {
+    background-image: url(../img/s-hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    .container {
+      @include container;
+      @include flex-center;
+      flex-direction: column;
+
+      .title-box {
+        @include flex-center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 59.2rem;
+        margin-top: 20rem;
+        padding-bottom: 6rem;
+
+        h1 {
+          @include titles;
+          text-align: center;
+
+          span {
+            color: $primary-color;
+          }
+        }
+
+        h2 {
+          color: rgba(255, 255, 255, 0.8);;
+          font-style: 2.4rem;
+          font-weight: 700;
+          line-height: 6rem;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          color: rgba(220, 246, 75, 0.8);
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.7rem;
+          text-align: center;
+        }
+
+        .techs {
+          @include flex-center;
+          margin-top: 2.3rem;
+          gap: 1.6rem;
+        }
+
+        .btn-empty {
+          @include btn-empty;
+          margin-top: 4rem;
+          padding: 1rem 5.6rem;
+        }
+      }
+    }
+  }
 }
