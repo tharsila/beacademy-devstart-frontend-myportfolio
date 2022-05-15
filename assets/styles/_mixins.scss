@@ -1,0 +1,50 @@
+@import 'variables';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@mixin titles {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: $white-color;
+  margin-top: 2rem;
+}
+
+@mixin btn-primary {
+  border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: $primary-color;
+  color: $black-color;
+  padding: 1rem 2.6rem;
+}
+
+@mixin btn-empty {
+  @include btn-primary;
+  border: 2px solid $primary-color;
+  background: transparent;
+}
+
+@mixin mobile {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin small-device {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
