@@ -29,6 +29,12 @@
   background: $primary-color;
   color: $black-color;
   padding: 1rem 2.6rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $white-color;
+    transform: scale(1.04);
+  }
 }
 
 @mixin btn-empty {
@@ -37,6 +43,21 @@
   color: $primary-color;
   font-size: 1.6rem;
   background: transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $primary-color;
+    color: $black-color;
+    transform: scale(1.04);
+  }
+}
+
+@mixin tag {
+  border-radius: 5rem;
+  padding: 0.6rem 2rem;
+  background: $white-color;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 @mixin mobile {
