@@ -379,6 +379,67 @@ main {
     }
   }
 
+  /* section contact */
+  .contact {
+    .container {
+      @include container;
+      @include flex-center;
+      justify-content: space-between;
+      padding: 0 10rem;
+
+      .contact-text {
+        margin-bottom: 10rem;
+        
+        h2 {
+          @include titles;
+          font-weight: 900;
+          text-transform: uppercase;
+          margin-bottom: 3rem;
+
+          span {
+            color: $primary-color;
+          }
+        }
+
+        .tag {
+          @include tag;
+        }
+      }
+
+      form {
+        width: 100%;
+        max-width: 48.6rem;
+        padding-top: 4rem;;
+        .form-group {
+          input, .textarea {
+            border: 1px solid $black-color-medium;
+            border-radius: 0.4rem;
+            background: $black-color-medium;
+            color: $white-color;
+            margin-bottom: 3.1rem;
+            width: 100%;
+            padding: 2rem;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              border: 1px solid rgba(220, 246, 75, 1);
+            }
+          }
+        }
+
+        .btn-submit {
+          padding-bottom: 5.4rem;
+          @include flex-center;
+          justify-content: flex-end;
+          button {
+            @include btn-primary;
+            border: none;
+          } 
+        }
+      }
+    }
+  }
 }
 
 footer {

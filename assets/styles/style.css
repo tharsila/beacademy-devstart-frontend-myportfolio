@@ -111,6 +111,7 @@ header .container nav .btn-primary {
   padding: 1rem 2.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 header .container nav .btn-primary:hover {
@@ -150,6 +151,7 @@ main {
   /* section success */
   /* section about me */
   /* section cases  */
+  /* section contact */
 }
 
 main .hero {
@@ -264,11 +266,13 @@ main .hero .container .title-box .btn-empty {
   padding: 1rem 2.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   border: 2px solid #dcf64b;
   color: #dcf64b;
   font-size: 1.6rem;
   background: transparent;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   margin-top: 4rem;
   padding: 1rem 5.6rem;
 }
@@ -577,11 +581,13 @@ main .cases .container .cases-cards .case-card .btn-empty {
   padding: 1rem 2.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   border: 2px solid #dcf64b;
   color: #dcf64b;
   font-size: 1.6rem;
   background: transparent;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,11 +637,13 @@ main .cases .another-projects .btn-empty {
   padding: 1rem 2.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   border: 2px solid #dcf64b;
   color: #dcf64b;
   font-size: 1.6rem;
   background: transparent;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 main .cases .another-projects .btn-empty:hover {
@@ -647,6 +655,112 @@ main .cases .another-projects .btn-empty:hover {
 main .cases .another-projects .btn-empty:hover {
   background: #dcf64b;
   color: #000000;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+main .contact .container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10rem;
+}
+
+main .contact .container .contact-text {
+  margin-bottom: 10rem;
+}
+
+main .contact .container .contact-text h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+main .contact .container .contact-text h2 span {
+  color: #dcf64b;
+}
+
+main .contact .container .contact-text .tag {
+  border-radius: 5rem;
+  padding: 0.6rem 2rem;
+  background: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+main .contact .container form {
+  width: 100%;
+  max-width: 48.6rem;
+  padding-top: 4rem;
+}
+
+main .contact .container form .form-group input, main .contact .container form .form-group .textarea {
+  border: 1px solid #0c0c0c;
+  border-radius: 0.4rem;
+  background: #0c0c0c;
+  color: #ffffff;
+  margin-bottom: 3.1rem;
+  width: 100%;
+  padding: 2rem;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .contact .container form .form-group input:hover, main .contact .container form .form-group .textarea:hover {
+  border: 1px solid #dcf64b;
+}
+
+main .contact .container form .btn-submit {
+  padding-bottom: 5.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .contact .container form .btn-submit button {
+  border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #dcf64b;
+  color: #000000;
+  padding: 1rem 2.6rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+main .contact .container form .btn-submit button:hover {
+  background: #ffffff;
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
 }
