@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&family=Poppins:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -82,11 +82,24 @@ header .container nav .menu {
 
 header .container nav .menu li {
   margin-right: 4.8rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .container nav .menu li:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 header .container nav .menu li .menu-item {
   color: #dcf64b;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .container nav .menu li .menu-item:hover {
+  color: #ffffff;
 }
 
 header .container nav .btn-primary {
@@ -96,6 +109,14 @@ header .container nav .btn-primary {
   background: #dcf64b;
   color: #000000;
   padding: 1rem 2.6rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .container nav .btn-primary:hover {
+  background: #ffffff;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 header .container nav .menu-social {
@@ -112,7 +133,23 @@ header .container nav .menu-social {
   gap: 3.4rem;
 }
 
+header .container nav .menu-social img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header .container nav .menu-social img:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
 /* section hero */
+main {
+  /* section success */
+}
+
 main .hero {
   background-image: url(../img/s-hero-bg.jpg);
   background-size: cover;
@@ -176,7 +213,7 @@ main .hero .container .title-box h1 span {
 
 main .hero .container .title-box h2 {
   color: rgba(255, 255, 255, 0.8);
-  font-style: 2.4rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 6rem;
   text-align: center;
@@ -205,6 +242,16 @@ main .hero .container .title-box .techs {
   gap: 1.6rem;
 }
 
+main .hero .container .title-box .techs a img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .hero .container .title-box .techs a img:hover {
+  -webkit-transform: translateY(-12%);
+          transform: translateY(-12%);
+}
+
 main .hero .container .title-box .btn-empty {
   border-radius: 2.4rem;
   font-weight: 700;
@@ -212,11 +259,156 @@ main .hero .container .title-box .btn-empty {
   background: #dcf64b;
   color: #000000;
   padding: 1rem 2.6rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 2px solid #dcf64b;
   color: #dcf64b;
   font-size: 1.6rem;
   background: transparent;
+  transition: all 0.3s ease-in-out;
   margin-top: 4rem;
   padding: 1rem 5.6rem;
+}
+
+main .hero .container .title-box .btn-empty:hover {
+  background: #ffffff;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+main .hero .container .title-box .btn-empty:hover {
+  background: #dcf64b;
+  color: #000000;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+main .success {
+  padding: 14.4rem 0;
+  margin: 0 auto;
+}
+
+main .success .container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+main .success .container .title-success .tag {
+  border-radius: 5rem;
+  padding: 0.6rem 2rem;
+  background: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+main .success .container .title-success h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+main .success .container .title-success h2 span {
+  color: #dcf64b;
+  font-weight: 800;
+}
+
+main .success .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .success .container .cards .card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 27.9rem;
+  height: 30.4rem;
+  border-radius: 0.4rem;
+  margin-right: 3.1rem;
+  cursor: pointer;
+}
+
+main .success .container .cards .card.active {
+  background: #dcf64b;
+}
+
+main .success .container .cards .card .card-title {
+  margin: 5rem 0;
+  padding: 0 14.5rem 0 1.4rem;
+}
+
+main .success .container .cards .card .card-title h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  color: #000000;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 5.5rem;
+}
+
+main .success .container .cards .card .card-info {
+  padding-left: 1.4rem;
+}
+
+main .success .container .cards .card .card-info p {
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 3.9rem;
+}
+
+footer {
+  background: #0c0c0c;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .copy {
+  padding: 5.2rem 0;
+}
+
+footer .container .copy p {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
