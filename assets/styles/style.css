@@ -148,6 +148,8 @@ header .container nav .menu-social img:hover {
 /* section hero */
 main {
   /* section success */
+  /* section about me */
+  /* section cases  */
 }
 
 main .hero {
@@ -155,6 +157,7 @@ main .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
+  background-attachment: fixed;
 }
 
 main .hero .container {
@@ -296,16 +299,9 @@ main .success .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: initial;
-      -ms-flex-pack: initial;
-          justify-content: initial;
-  align-items: center;
   gap: 4.4rem;
 }
 
@@ -378,6 +374,281 @@ main .success .container .cards .card .card-info p {
   font-size: 3.2rem;
   font-weight: 300;
   line-height: 3.9rem;
+}
+
+main .about {
+  background: #0c0c0c;
+  padding: 6rem 0;
+}
+
+main .about .container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .about .container .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  max-width: 71rem;
+}
+
+main .about .container .about-me h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 2.7rem;
+}
+
+main .about .container .about-me h2 span {
+  color: #dcf64b;
+}
+
+main .about .container .about-me p {
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+main .about .container .about-me ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  margin-top: 3.7rem;
+}
+
+main .about .container .picture img {
+  border-radius: 4px;
+}
+
+main .cases {
+  padding: 5rem;
+}
+
+main .cases .container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main .cases .container h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+}
+
+main .cases .container h2 span {
+  color: #dcf64b;
+}
+
+main .cases .container .cases-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .cases .container .cases-cards .case-card {
+  max-width: 360px;
+  border: 2px solid #dcf64b;
+  border-radius: 4px;
+  padding: 3.8rem 3rem;
+  text-align: left;
+}
+
+main .cases .container .cases-cards .case-card .img {
+  position: relative;
+}
+
+main .cases .container .cases-cards .case-card .img .line {
+  border: 1px solid #dcf64b;
+  border-radius: 4px;
+  width: calc(100% + 2.4rem);
+  height: calc(100% + 2.4rem);
+  -webkit-transform: rotate(-1.93deg);
+          transform: rotate(-1.93deg);
+  position: absolute;
+  top: -1.2rem;
+  left: calc(50% - 100%/2 - 12px);
+}
+
+main .cases .container .cases-cards .case-card .img img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+main .cases .container .cases-cards .case-card .language {
+  margin-bottom: 2rem;
+}
+
+main .cases .container .cases-cards .case-card .language ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+main .cases .container .cases-cards .case-card .language ul li {
+  color: #dcf64b;
+  padding: 0.5rem 1rem;
+  border: 1px solid #dcf64b;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+main .cases .container .cases-cards .case-card p {
+  color: rgba(220, 246, 75, 0.8);
+  font-size: 1.6rem;
+}
+
+main .cases .container .cases-cards .case-card p strong {
+  text-transform: uppercase;
+}
+
+main .cases .container .cases-cards .case-card .btn-empty {
+  border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #dcf64b;
+  color: #000000;
+  padding: 1rem 2.6rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #dcf64b;
+  color: #dcf64b;
+  font-size: 1.6rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main .cases .container .cases-cards .case-card .btn-empty:hover {
+  background: #ffffff;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+main .cases .container .cases-cards .case-card .btn-empty:hover {
+  background: #dcf64b;
+  color: #000000;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+main .cases .another-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+main .cases .another-projects .btn-empty {
+  border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #dcf64b;
+  color: #000000;
+  padding: 1rem 2.6rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #dcf64b;
+  color: #dcf64b;
+  font-size: 1.6rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+main .cases .another-projects .btn-empty:hover {
+  background: #ffffff;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+main .cases .another-projects .btn-empty:hover {
+  background: #dcf64b;
+  color: #000000;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 footer {

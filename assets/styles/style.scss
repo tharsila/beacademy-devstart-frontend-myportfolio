@@ -59,7 +59,7 @@ header {
             color: $primary-color;
             font-weight: 700; 
             transition: all 0.3s ease-in-out;
-            
+
             &:hover {
               color: $white-color;
             }
@@ -97,6 +97,8 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
+    background-attachment: fixed;
+
     .container {
       @include container;
       @include flex-center;
@@ -167,13 +169,11 @@ main {
     margin: 0 auto;;
     .container {
       @include container;
-      @include flex-center;
-      justify-content: initial;
+      display: flex;
       align-items: center;
       gap: 4.4rem;
 
       .title-success {
-      
         .tag {
           @include tag;
         }
@@ -230,6 +230,155 @@ main {
       }
     }
   }
+
+  /* section about me */
+  .about {
+    background: $black-color-medium;
+    padding: 6rem 0;
+    .container {
+      @include container;
+      @include flex-center;
+      justify-content: space-between;
+
+      .about-me {
+        @include flex-center;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        max-width: 71rem;
+
+        h2 {
+          @include titles;
+          text-transform: uppercase;
+          font-weight: 900;
+          margin-bottom: 2.7rem;
+
+          span {
+            color: $primary-color;
+          }
+        }
+
+        p {
+          color:rgba(255, 255, 255, 0.83);
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 1.6rem;
+          margin-top: 3.7rem;
+        }
+
+      }
+
+      .picture {
+        img {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  /* section cases  */
+  .cases {
+    padding: 5rem;
+    .container {
+      @include container;
+
+      h2 {
+        @include titles;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 8rem;
+
+        span {
+          color: $primary-color;
+        }
+      }
+
+      .cases-cards {
+        @include flex-center;
+        justify-content: space-between;
+     
+        .case-card {
+          max-width: 360px;
+          border: 2px solid $primary-color;
+          border-radius: 4px;
+          padding: 3.8rem 3rem;
+          text-align: left;
+
+          .img {
+            position: relative;
+            .line {
+              border: 1px solid $primary-color;
+              border-radius: 4px;
+              width: calc(100% + 2.4rem);
+              height: calc(100% + 2.4rem);
+              transform: rotate(-1.93deg);
+              position: absolute;
+              top: -1.2rem;
+              left: calc(50% - 100%/2 - 12px)
+            }
+
+            img {
+              border-radius: 4px;
+              width: 100%;
+            }
+          }
+
+          .language {
+            margin-bottom: 2rem;
+
+            ul {
+              @include flex-center;
+              justify-content: flex-start;
+              gap: 1rem;
+              margin-top: 4rem;
+        
+              
+              li {
+                color:$primary-color;
+                padding: 0.5rem 1rem;
+                border: 1px solid $primary-color;
+                border-radius: 4px;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          p {
+            color:rgba(220, 246, 75, 0.8);
+            font-size: 1.6rem;
+
+            strong {
+              text-transform: uppercase;
+            }
+          }
+          
+          .btn-empty {
+            @include btn-empty;
+            @include flex-center;
+            width: 100%;
+            margin-top: 2rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .another-projects {
+      @include flex-center;
+      margin-top: 3rem;
+
+      .btn-empty {
+        @include btn-empty;
+      }
+    }
+  }
+
 }
 
 footer {
