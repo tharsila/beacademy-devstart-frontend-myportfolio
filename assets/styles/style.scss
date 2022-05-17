@@ -42,6 +42,9 @@ header {
       @include flex-center;
       text-transform: uppercase;
       font-size: 1.6rem;
+      @include tablet {
+        display: none;
+      }
 
       .menu {
         @include flex-center;
@@ -98,6 +101,9 @@ main {
     background-repeat: no-repeat;
     background-position: fixed;
     background-attachment: fixed;
+    @include tablet {
+      background-position: center;
+    }
 
     .container {
       @include container;
@@ -128,6 +134,10 @@ main {
           line-height: 6rem;
           text-align: center;
           margin-bottom: 2rem;
+          @include mobile {
+            line-height: 3.6rem;
+            margin-top: 20px;
+          }
         }
 
         p {
@@ -166,20 +176,34 @@ main {
   /* section success */
   .success {
     padding: 14.4rem 0;
-    margin: 0 auto;;
+    margin: 0 auto;
+    @include mobile {
+      padding: 10rem 0;
+    }
+
     .container {
       @include container;
       display: flex;
       align-items: center;
       gap: 4.4rem;
-
+      @include desktop {
+        flex-direction: column;
+      }
+    
       .title-success {
+        @include desktop {
+          @include flex-center;
+          flex-direction: column;
+        }
         .tag {
           @include tag;
         }
 
         h2 {
           @include titles;
+          @include desktop {
+            text-align: center;
+          }
 
           span {
             color: $primary-color;
@@ -190,7 +214,11 @@ main {
 
       .cards {
         display: flex;
-
+        @include tablet {
+          @include flex-center;
+          flex-direction: column;
+          width: 100%;
+        }
         .card {
           background: $white-color;
           width: 100%;
@@ -200,6 +228,16 @@ main {
           margin-right: 3.1rem;
           cursor: pointer;
 
+          @include tablet {
+            max-width: 95%;
+            @include flex-center;
+            margin-right: 0;
+            margin-bottom: 5rem;;
+          }
+          @include mobile {
+            flex-direction: column;
+          }
+          
           &.active {
             background: $primary-color;
           }
@@ -207,6 +245,9 @@ main {
           .card-title {
             margin: 5rem 0;
             padding: 0 14.5rem 0 1.4rem;
+            @include mobile {
+              padding: 0;
+            }
 
             h3 {
               @include titles;
@@ -214,6 +255,9 @@ main {
               font-weight: 300;
               margin-top: 0;
               margin-bottom: 5.5rem;
+              @include tablet {
+                margin-bottom: 0;
+              }
             }
           }
 
@@ -224,6 +268,9 @@ main {
               font-size: 3.2rem;
               font-weight: 300;
               line-height: 3.9rem;
+              @include tablet {
+                text-align: center;
+              }
             }
           }
         }
@@ -239,6 +286,10 @@ main {
       @include container;
       @include flex-center;
       justify-content: space-between;
+      @include desktop-two {
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
       .about-me {
         @include flex-center;
@@ -252,6 +303,10 @@ main {
           text-transform: uppercase;
           font-weight: 900;
           margin-bottom: 2.7rem;
+          @include desktop-two {
+            text-align: center;
+            width: 100%;
+          }
 
           span {
             color: $primary-color;
@@ -262,6 +317,10 @@ main {
           color:rgba(255, 255, 255, 0.83);
           font-size: 1.6rem;
           line-height: 2.4rem;
+          @include desktop-two {
+            text-align: center;
+            width: 100%;
+          }
         }
 
         ul {
@@ -269,6 +328,11 @@ main {
           align-items: center;
           gap: 1.6rem;
           margin-top: 3.7rem;
+          @include desktop-two {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 3rem;;
+          }
         }
 
       }
@@ -292,6 +356,9 @@ main {
         font-weight: 900;
         text-transform: uppercase;
         margin-bottom: 8rem;
+        @include tablet {
+          text-align: center;
+        }
 
         span {
           color: $primary-color;
@@ -301,12 +368,17 @@ main {
       .cases-cards {
         @include flex-center;
         justify-content: space-between;
+        gap: 2rem;
+        @include tablet {
+          flex-direction: column;
+          gap: 3rem;
+        }
      
         .case-card {
           max-width: 360px;
           border: 2px solid $primary-color;
           border-radius: 4px;
-          padding: 3.8rem 3rem;
+          padding: 3.8rem 5rem;
           text-align: left;
 
           .img {
@@ -386,9 +458,20 @@ main {
       @include flex-center;
       justify-content: space-between;
       padding: 0 10rem;
+      @include tablet {
+        flex-direction: column;
+      }
+      @include mobile {
+        padding: 0 5rem;
+      }
 
       .contact-text {
         margin-bottom: 10rem;
+        @include tablet {
+          @include flex-center;
+          flex-direction: column;
+          margin-bottom: 0;
+        }
         
         h2 {
           @include titles;
@@ -409,7 +492,7 @@ main {
       form {
         width: 100%;
         max-width: 48.6rem;
-        padding-top: 4rem;;
+        padding-top: 4rem;
         .form-group {
           input, .textarea {
             border: 1px solid $black-color-medium;
