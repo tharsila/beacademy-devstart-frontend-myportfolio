@@ -1,0 +1,23 @@
+{
+  "name": "beacademy-devstart-frontend-myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tharsila/beacademy-devstart-frontend-myportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tharsila/beacademy-devstart-frontend-myportfolio/issues"
+  },
+  "homepage": "https://github.com/tharsila/beacademy-devstart-frontend-myportfolio#readme",
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}
