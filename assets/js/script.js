@@ -1,3 +1,7 @@
-import menuMobile from './menu-mobile.js';
+import initMenuMobile from './menu-mobile.js';
+import initScroll from './scroll.js'
+import initNumbersAnimation from './numbers-animation.js';
 
-menuMobile();
+initMenuMobile();
+initScroll();
+initNumbersAnimation();
