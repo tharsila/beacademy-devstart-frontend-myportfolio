@@ -124,10 +124,16 @@ header {
     #menu-mobile {
       color: $primary-color;
       font-size: 3.5rem;
+      cursor: pointer;
       display: none;
       @include tablet {
         display: block;
         z-index: 3000;
+        transition: 0.5s;
+
+        &.fa-times {
+          transform: rotate(180deg);
+        }
       }
     }
   }
