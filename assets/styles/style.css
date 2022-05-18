@@ -141,8 +141,8 @@ header .container nav .menu-social {
 }
 
 header .container nav .menu-social img {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 header .container nav .menu-social img:hover {
@@ -214,6 +214,12 @@ main .hero .container .title-box {
   padding-bottom: 6rem;
 }
 
+@media (max-width: 970px) {
+  main .hero .container .title-box {
+    margin-top: 15rem;
+  }
+}
+
 main .hero .container .title-box h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -222,6 +228,12 @@ main .hero .container .title-box h1 {
   color: #ffffff;
   margin-top: 2rem;
   text-align: center;
+}
+
+@media (max-width: 650px) {
+  main .hero .container .title-box h1 {
+    font-size: 5.4rem;
+  }
 }
 
 main .hero .container .title-box h1 span {
@@ -294,6 +306,7 @@ main .hero .container .title-box .btn-empty {
   cursor: pointer;
   margin-top: 4rem;
   padding: 1rem 5.6rem;
+  text-align: center;
 }
 
 main .hero .container .title-box .btn-empty:hover {
@@ -384,6 +397,12 @@ main .success .container .title-success h2 {
   }
 }
 
+@media (max-width: 650px) {
+  main .success .container .title-success h2 {
+    font-size: 5.4rem;
+  }
+}
+
 main .success .container .title-success h2 span {
   color: #dcf64b;
   font-weight: 800;
@@ -422,6 +441,13 @@ main .success .container .cards .card {
   border-radius: 0.4rem;
   margin-right: 3.1rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .success .container .cards .card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 @media (max-width: 970px) {
@@ -438,6 +464,9 @@ main .success .container .cards .card {
             align-items: center;
     margin-right: 0;
     margin-bottom: 5rem;
+  }
+  main .success .container .cards .card:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -577,6 +606,12 @@ main .about .container .about-me h2 {
   }
 }
 
+@media (max-width: 650px) {
+  main .about .container .about-me h2 {
+    font-size: 5.4rem;
+  }
+}
+
 main .about .container .about-me h2 span {
   color: #dcf64b;
 }
@@ -603,6 +638,16 @@ main .about .container .about-me ul {
           align-items: center;
   gap: 1.6rem;
   margin-top: 3.7rem;
+}
+
+main .about .container .about-me ul li a img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main .about .container .about-me ul li a img:hover {
+  -webkit-transform: translateY(-12%);
+          transform: translateY(-12%);
 }
 
 @media (max-width: 1160px) {
@@ -648,6 +693,12 @@ main .cases .container h2 {
   }
 }
 
+@media (max-width: 650px) {
+  main .cases .container h2 {
+    font-size: 5.4rem;
+  }
+}
+
 main .cases .container h2 span {
   color: #dcf64b;
 }
@@ -680,7 +731,7 @@ main .cases .container .cases-cards {
 
 main .cases .container .cases-cards .case-card {
   max-width: 360px;
-  border: 2px solid #dcf64b;
+  border: 1px solid rgba(220, 246, 75, 0.8);
   border-radius: 4px;
   padding: 3.8rem 5rem;
   text-align: left;
@@ -691,7 +742,7 @@ main .cases .container .cases-cards .case-card .img {
 }
 
 main .cases .container .cases-cards .case-card .img .line {
-  border: 1px solid #dcf64b;
+  border: 1px solid rgba(220, 246, 75, 0.8);
   border-radius: 4px;
   width: calc(100% + 2.4rem);
   height: calc(100% + 2.4rem);
@@ -731,7 +782,7 @@ main .cases .container .cases-cards .case-card .language ul {
 main .cases .container .cases-cards .case-card .language ul li {
   color: #dcf64b;
   padding: 0.5rem 1rem;
-  border: 1px solid #dcf64b;
+  border: 1px solid rgba(220, 246, 75, 0.8);
   border-radius: 4px;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -818,6 +869,7 @@ main .cases .another-projects .btn-empty {
   background: transparent;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  text-align: center;
 }
 
 main .cases .another-projects .btn-empty:hover {
@@ -850,7 +902,6 @@ main .contact .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 10rem;
 }
 
 @media (max-width: 970px) {
@@ -901,6 +952,12 @@ main .contact .container .contact-text h2 {
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 650px) {
+  main .contact .container .contact-text h2 {
+    font-size: 5.4rem;
+  }
 }
 
 main .contact .container .contact-text h2 span {
@@ -965,6 +1022,7 @@ main .contact .container form .btn-submit button {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: none;
+  text-transform: uppercase;
 }
 
 main .contact .container form .btn-submit button:hover {

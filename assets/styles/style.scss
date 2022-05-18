@@ -80,7 +80,7 @@ header {
         gap: 3.4rem;
 
         img {
-          transition: all 0.2s ease-in-out;
+          transition: all 0.3s ease-in-out;
 
           &:hover {
             transform: translateY(-5%);
@@ -117,10 +117,16 @@ main {
         max-width: 59.2rem;
         margin-top: 20rem;
         padding-bottom: 6rem;
+        @include tablet {
+          margin-top: 15rem;
+        }
 
         h1 {
           @include titles;
           text-align: center;
+          @include mobile {
+            font-size: 5.4rem;
+          }
 
           span {
             color: $primary-color;
@@ -168,6 +174,7 @@ main {
           @include btn-empty;
           margin-top: 4rem;
           padding: 1rem 5.6rem;
+          text-align: center;
         }
       }
     }
@@ -204,6 +211,9 @@ main {
           @include desktop {
             text-align: center;
           }
+          @include mobile {
+            font-size: 5.4rem;
+          }
 
           span {
             color: $primary-color;
@@ -227,12 +237,21 @@ main {
           border-radius: 0.4rem;
           margin-right: 3.1rem;
           cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.04);
+          }
 
           @include tablet {
             max-width: 95%;
             @include flex-center;
             margin-right: 0;
-            margin-bottom: 5rem;;
+            margin-bottom: 5rem;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
           }
           @include mobile {
             flex-direction: column;
@@ -307,6 +326,9 @@ main {
             text-align: center;
             width: 100%;
           }
+          @include mobile {
+            font-size: 5.4rem;
+          }
 
           span {
             color: $primary-color;
@@ -328,6 +350,19 @@ main {
           align-items: center;
           gap: 1.6rem;
           margin-top: 3.7rem;
+
+          li {
+            a {
+              img {
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                  transform: translateY(-12%);
+                }
+              }
+            }
+          }
+
           @include desktop-two {
             width: 100%;
             justify-content: center;
@@ -359,6 +394,9 @@ main {
         @include tablet {
           text-align: center;
         }
+        @include mobile {
+          font-size: 5.4rem;
+        }
 
         span {
           color: $primary-color;
@@ -376,7 +414,7 @@ main {
      
         .case-card {
           max-width: 360px;
-          border: 2px solid $primary-color;
+          border: 1px solid rgba(220, 246, 75, 0.8);
           border-radius: 4px;
           padding: 3.8rem 5rem;
           text-align: left;
@@ -384,7 +422,7 @@ main {
           .img {
             position: relative;
             .line {
-              border: 1px solid $primary-color;
+              border: 1px solid rgba(220, 246, 75, 0.8);
               border-radius: 4px;
               width: calc(100% + 2.4rem);
               height: calc(100% + 2.4rem);
@@ -413,7 +451,7 @@ main {
               li {
                 color:$primary-color;
                 padding: 0.5rem 1rem;
-                border: 1px solid $primary-color;
+                border: 1px solid rgba(220, 246, 75, 0.8);
                 border-radius: 4px;
                 font-size: 1.6rem;
                 text-transform: uppercase;
@@ -447,6 +485,7 @@ main {
 
       .btn-empty {
         @include btn-empty;
+        text-align: center;
       }
     }
   }
@@ -457,7 +496,7 @@ main {
       @include container;
       @include flex-center;
       justify-content: space-between;
-      padding: 0 10rem;
+      
       @include tablet {
         flex-direction: column;
       }
@@ -478,6 +517,9 @@ main {
           font-weight: 900;
           text-transform: uppercase;
           margin-bottom: 3rem;
+          @include mobile {
+            font-size: 5.4rem;
+          }
 
           span {
             color: $primary-color;
@@ -518,6 +560,7 @@ main {
           button {
             @include btn-primary;
             border: none;
+            text-transform: uppercase;
           } 
         }
       }
