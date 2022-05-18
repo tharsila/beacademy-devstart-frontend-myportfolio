@@ -772,29 +772,21 @@ main .cases .container .cases-cards .case-card .language ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   margin-top: 4rem;
 }
 
 main .cases .container .cases-cards .case-card .language ul li {
-  color: #dcf64b;
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(220, 246, 75, 0.8);
-  border-radius: 4px;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
 }
 
 main .cases .container .cases-cards .case-card p {
   color: rgba(220, 246, 75, 0.8);
-  font-size: 1.6rem;
-}
-
-main .cases .container .cases-cards .case-card p strong {
+  font-size: 1.5rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 main .cases .container .cases-cards .case-card .btn-empty {
