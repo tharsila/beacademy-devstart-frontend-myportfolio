@@ -1,7 +1,7 @@
-export default function menuMobile() {
+export default function initMenuMobile() {
   const menuHamburger = document.getElementById('menu-mobile');
   const menuList = document.getElementById('menu-list');
-  const events = ['click', 'touchstart']
+  const events = ['click', 'touchstart'];
   
   function handleMenu (event) {
     if (event.type === 'touchstart') event.preventDefault();
