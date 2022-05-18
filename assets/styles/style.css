@@ -193,6 +193,7 @@ header .container nav .menu-social img:hover {
 header .container #menu-mobile {
   color: #dcf64b;
   font-size: 3.5rem;
+  cursor: pointer;
   display: none;
 }
 
@@ -200,6 +201,12 @@ header .container #menu-mobile {
   header .container #menu-mobile {
     display: block;
     z-index: 3000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .container #menu-mobile.fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
