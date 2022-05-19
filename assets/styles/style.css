@@ -827,6 +827,14 @@ main .cases .container .cases-cards .case-card {
   border-radius: 4px;
   padding: 3.8rem 5rem;
   text-align: left;
+  background: #0c0c0c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .cases .container .cases-cards .case-card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 main .cases .container .cases-cards .case-card .img {
