@@ -23,13 +23,13 @@
  <h3>Mobile</h3>
  
 <div align="center">
-  <img align="center" src ="https://user-images.githubusercontent.com/89864249/169398694-f893a481-a0e3-4a64-9871-f11dc279d8e1.gif" width="800px"/>
+  <img align="center" src ="https://user-images.githubusercontent.com/89864249/169401242-ca954541-5ac0-4a5a-a016-a04e7a676214.gif" width="800px"/>
 </div>
  
  <h3>Web</h3>
  
 <div align="center">
-  <img align="center" src ="https://user-images.githubusercontent.com/89864249/169398819-be11f2f2-cd5e-4cf6-85cc-47cc0d12e37f.gif" width="800px"/>
+  <img align="center" src ="https://user-images.githubusercontent.com/89864249/169401261-5a3e318b-2452-47ea-b96e-b33f59c41c44.gif" width="800px"/>
 </div>
 
  
