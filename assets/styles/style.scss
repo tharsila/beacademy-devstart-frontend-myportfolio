@@ -468,6 +468,12 @@ main {
           border-radius: 4px;
           padding: 3.8rem 5rem;
           text-align: left;
+          background: $black-color-medium;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.04);
+          }
 
           .img {
             position: relative;
